@@ -12,7 +12,7 @@ async fn test_conn() -> Result<(), anyhow::Error> {
     };
     let address = "127.0.0.1:8000";
     dbg!("TEST");
-    let r = db_conn(&address, db).await.unwrap();
+    let r = db_conn(address, db).await.unwrap();
     dbg!(r);
 
     let sql = "SELECT * FROM Account";
