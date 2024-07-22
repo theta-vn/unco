@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "unco",
+    "unco_derives",
+]
+resolver = "2"
+exclude = []
+
+[workspace.package]
+rust-version = "1.78.0"
+version = "0.0.1"
