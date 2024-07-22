@@ -10,4 +10,8 @@ serde = "1.0"
 serde_json = "1.0"
 surrealdb = "1.5"
 tokio = "1.38"
-unco_derives = {path = "../unco_derives"}
+
+[dependencies.unco_derives]
+version = "0.0.1"
+path = "../unco_derives"
+
