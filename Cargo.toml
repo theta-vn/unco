@@ -8,4 +8,4 @@ exclude = []
 
 [workspace.package]
 rust-version = "1.78.0"
-version = "0.0.1"
+version = "0.0.2"

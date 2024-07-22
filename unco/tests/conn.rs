@@ -3,7 +3,7 @@ use unco::*;
 
 #[tokio::test]
 async fn test_conn() -> Result<(), anyhow::Error> {
-// async fn test_conn() {
+    // async fn test_conn() {
     let db = Database {
         namespace: "test",
         database: "test",

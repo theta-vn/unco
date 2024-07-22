@@ -1,8 +1,7 @@
-
 use serde_json::json;
 use std::collections::HashMap;
-use unco_derives::*;
 use unco::*;
+use unco_derives::*;
 schema! {
   Post {
     id: UncoId,
@@ -25,7 +24,7 @@ fn test_create() {
 
     let json = json!({
       "title": "Title",
-      "des": "Description",      
+      "des": "Description",
       "count": 1,
       "valid": true,
       "array_number": [1,2],

@@ -11,7 +11,6 @@ pub async fn db_conn(address: &str, credentials: Database<'static>) -> Result<()
     // Connect to the database
     DB.connect::<Ws>(address).await?;
     // Signin as a namespace, database, or root user
-    DB.signin(credentials)
-    .await?;
+    DB.signin(credentials).await?;
     Ok(())
 }

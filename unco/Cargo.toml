@@ -16,7 +16,7 @@ serde_json = "1.0"
 surrealdb = "1.5"
 
 [dependencies.unco_derives]
-version = "0.0.1"
+version = "0.0.2"
 path = "../unco_derives"
 
 [dev-dependencies]
