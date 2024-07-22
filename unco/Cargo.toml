@@ -2,6 +2,11 @@
 name = "unco"
 edition = "2021"
 version = { workspace = true }
+authors = ["LangPham"]
+license = "MIT"
+repository = "https://github.com/theta-vn/unco"
+description = "Supports working with SurealDB"
+readme = "../README.md"
 
 [dependencies]
 anyhow = "1.0"
