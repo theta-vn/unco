@@ -7,16 +7,11 @@ use surrealdb::{
 
 pub static DB: Lazy<Surreal<Client>> = Lazy::new(Surreal::init);
 
-pub async fn db_conn() -> Result<(), anyhow::Error> {
+pub async fn db_conn(address: &str, credentials: Database<'static>) -> Result<(), anyhow::Error> {
     // Connect to the database
-    DB.connect::<Ws>("127.0.0.1:8000").await?;
+    DB.connect::<Ws>(address).await?;
     // Signin as a namespace, database, or root user
-    DB.signin(Database {
-        namespace: "test",
-        database: "test",
-        username: "root",
-        password: "root",
-    })
+    DB.signin(credentials)
     .await?;
     Ok(())
 }
